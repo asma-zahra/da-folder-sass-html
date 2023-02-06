@@ -1,0 +1,135 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+body {
+    font-size  : $base-font-size;
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    color      : $base-font-color;
+    font-weight: $base-font-weight;
+    background: $base-theme-color;
+}
+
+.container, .containerlg {
+    padding-left : 1rem;
+    padding-right: 1rem;
+    margin       : 0 auto;
+}
+section {
+    padding: 100px 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-size  : 3.28vw;
+    font-weight: 700;
+    color      : $base-font-color-2;
+}
+h2 {
+    font-size: 2.5vw;
+    color: $base-font-color-2;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    
+    span {
+        color: #02B3FF;
+    }
+}
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    color: $base-font-color;
+    font-size: 1.56vw;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+h4 {
+    font-size: 30px;
+    color: $base-theme-color;
+    margin: 0 0 20px 0;
+    line-height: 36px;
+}
+.pt-5 {
+    padding-top: 3rem!important;
+}
+.text-center {
+    text-align: center;
+}
+.position-relative {
+    position: relative;
+}
+.d-none {
+    display: none;
+}
+.white-box {
+    background: #fff;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 48px;
+      width: calc(100% - 40px);
+      height: calc(100% - 6px);
+      background: $website-brand-color;
+      @include box-shadow2 (3px, 3px, 10px, rgba(202, 252, 1, 0.5));
+      z-index: -1;
+    }
+}
+.purple {
+    color: #C136EE;
+}
+.blue {
+    color: #02B3FF;
+}
+.yellow {
+    color: #F5E12A;
+}
+.blue {
+    color: #02B3FF;
+}
+.red {
+    color: #DD5A5A;
+}
+.green1 {
+    color: #8FAE21;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 3.88vw;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 4.88vw;
+    }
+    
+}
+
+

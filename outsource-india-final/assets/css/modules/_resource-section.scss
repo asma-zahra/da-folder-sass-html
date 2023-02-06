@@ -1,0 +1,264 @@
+.resource {
+    padding: 100px 0;
+    .sechead {
+        margin-bottom: 50px;
+    }
+    &_card {
+        background: #F8E4C5;
+        position: relative;
+        .resource_name {
+            padding: 10px 20px;
+            @include flexbox();
+            @include flex-direction(column);
+            position: relative;
+            h2 {
+                font-size: 3.25rem;
+                color: $base-font-color1;
+                text-align: center;
+            }
+            small {
+                color: $website-brand-color;
+                margin-left: auto;
+                font-weight: 600;
+            }
+        }
+        img {
+            margin-top: -62px;
+            position: relative;
+        }
+        &::before {
+            content: '';
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+            @include border-radius(100%);
+            background: rgba(255, 255, 255, 0.27);
+        }
+        &.second_resource,
+        &.third_resource {
+            background: #E8F8C5;
+            .resource_content {
+                height: 60%;
+            }
+            .experience_row {
+                color: $base-font-color1;
+                padding: 0 30px 0 30px;
+            }
+        }
+        &.second_resource {
+            .skills_row {
+                margin-top: 50px;
+            }
+        }
+        &.third_resource {
+            background: #F8E4C5;
+            .resource_content {
+                height: 65%;
+            }
+            .skills_row {
+                margin-top: 45px;
+            }
+            .experience_row {
+                .project_completed {
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+    &_content {
+        position: absolute;
+        width: 100%;
+        height: 54%;
+        @include gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9));
+        bottom: 0;
+        left: 0;
+        color: $base-white-color;
+        h5 {
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+        h3 {
+            font-size: 3.25rem;
+            line-height: 1;
+            font-weight: 700;
+        }
+        p {
+            font-size: 0.875rem;
+        }
+        .experience_row {
+            padding: 0 30px 0 50px;
+            // font-family: $base-font-family-2;
+            .project_completed {
+                margin-top: 30px;
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items(flex-end);
+                h5 {
+                    width: 80px;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .skills_row {
+            padding-left: 20px;
+            margin-top: 20px;
+            .flexbox {
+                @include align-items(center);
+                .flex-6 {
+                    &:first-child {
+                        padding-right: 0;
+                    }
+                    &:last-child {
+                        padding-left: 0;
+                        @include flexbox();
+                        @include justify-content(end);
+                    }
+                }
+            }
+            h5 {
+                margin-bottom: 10px;
+            }
+            .btn-primary {
+                @include border-radii(100px, 0, 0, 100px);
+                padding: 20px;
+                &:hover {
+                    @include scale(1);
+                }
+            }
+        }
+    }
+    @media (max-width: 1600px) {
+        .inner_container {
+            width: 100%;
+        }
+        .resource_name {
+            h2 {
+                font-size: 2.75rem;
+            }
+        }
+    }
+    @media (max-width: 1449.98px) {
+        .resource_content {
+            .skills_row {
+                margin-top: 0;
+                .btn-primary {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .resource_card {
+        img {
+            margin-top: -45px;
+        }
+        &.second_resource {
+            .skills_row {
+                margin-top: 30px;
+            }
+        }
+        &.third_resource {
+            .skills_row {
+                margin-top: 15px;
+            }
+        }
+    }
+    @media (max-width: 1199.98px) {
+        .resource_name {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+        .resource_card {
+            .resource_name {
+                @include align-items(center);
+                small {
+                    margin-left: inherit;
+                }
+            }
+            img {
+                margin-top: 0;
+            }
+            &.second_resource,
+            &.third_resource {
+                .experience_row {
+                    color: $base-white-color;
+                }
+                .skills_row {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .resource_content {
+            position: relative;
+            background: $base-font-color1;
+            color: $base-white-color;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            .experience_row {
+                padding: 0 20px;
+                /* .flexbox {
+                    .flex-6 {
+                        flex: 0 0 auto;
+                        width: 100%;
+                    }
+                } */
+                .project_completed {
+                    margin-top: 0;
+                }
+            }
+            .skills_row {
+                padding-right: 20px;
+                margin-top: 20px;
+                .flexbox {
+                    .flex-6 {
+                        flex: 0 0 auto;
+                        width: 100%;
+                        &:first-child {
+                            text-align: center;
+                            padding-right: 1rem;
+                        }
+                        &:last-child {
+                            padding-left: 1rem;
+                            @include justify-content(center);
+                        }
+                    }
+                }
+                .btn-primary {
+                    @include border-radius(100px);
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 767.98px) {
+        .flexbox {
+            .flex-4 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+        .resource_card {
+            margin-bottom: 20px;
+            img {
+                margin: 0 auto;
+            }
+        }
+        .resource_content {
+            .experience_row {
+                .flex-6 {
+                    text-align: center;
+                }
+                .project_completed {
+                    display: block;
+                    h5 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

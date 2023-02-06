@@ -1,0 +1,178 @@
+.resource {
+    padding: 100px 0;
+
+    /* .item {
+        padding: 125px 0 0;
+    } */
+    .resource-slide {
+        margin-top: 80px;
+    }
+
+    .resource-img {
+        // background-color: $base-grey-color;
+        @include border-radius(15px);
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+
+        /* img {
+            margin: -110px auto 0;
+            padding: 0 15px;
+        } */
+
+        .des {
+            background-color: $base-light-green-color;
+            padding: 15px;
+            font-weight: 400;
+            font-size: 26px;
+            color: $base-font-color;
+            white-space: nowrap;
+            @include border-radii(0, 0, 15px, 15px);
+
+            b {
+                font-weight: 700;
+                font-size: 40px;
+                display: block;
+                margin: 0 0 5px;
+            }
+        }
+
+        @media screen and (max-width:1600px) {
+            max-width: 350px;
+
+            .des {
+                font-size: 20px;
+
+                b {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        @media screen and (max-width:1199.98px) {
+            max-width: 300px;
+        }
+
+        @media screen and (max-width:991.98px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .resource-oontent {
+        font-weight: 400;
+        font-size: 24px;
+        color: $base-font-gray-color;
+        text-align: center;
+
+        .exp {
+            font-weight: 700;
+            font-size: 26px;
+            text-transform: capitalize;
+            color: $base-font-color;
+            white-space: nowrap;
+            margin: 0 0 20px;
+            @include flexbox;
+            @include align-items(center);
+            @include flex-wrap(wrap);
+
+            span {
+                margin: 0 10px;
+            }
+        }
+
+        .skills {
+            @include flexbox;
+            @include justify-content(flex-start);
+            @include flex-wrap(wrap);
+            font-weight: 400;
+            font-size: 18px;
+            color: $base-black-color;
+            margin: 50px 0 40px;
+
+            span {
+                background-color: #EAEAEA;
+                border-radius: 6px;
+                padding: 10px 20px;
+                margin: 0 10px 10px 0;
+            }
+        }
+
+        @media screen and (max-width:1600px) {
+            font-size: 20px;
+
+            .exp {
+                font-size: 22px;
+            }
+
+            .skills {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width:991.98px) {
+
+            .exp,
+            .skills {
+                @include justify-content(center);
+            }
+        }
+    }
+
+    button {
+        @extend .btn-primary;
+    }
+
+    .owl-dots {
+        position: absolute;
+        margin: 0;
+        top: calc(100% - 42px);
+        font-weight: 600;
+        font-size: 24px;
+        color: #1D191F;
+        left: calc(100% - 60px);
+
+        .owl-dot {
+            display: none;
+            position: relative;
+
+            &.active {
+                display: block;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: calc(50% - 2px);
+                    top: calc(50% - 2px);
+                    transform: translate(-50%, -50%);
+                    background-color: #D8F5E8;
+                    width: 28px;
+                    height: 28px;
+                    z-index: -1;
+                    @include border-radius(50rem);
+                }
+            }
+        }
+
+        &::after {
+            content: '/3';
+        }
+
+        @media screen and (max-width:991.98px) {
+            left: calc(50% - 10px);
+            top: calc(100% + 33px);
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        .resource-box {
+            @include flexbox;
+            @include justify-content(center);
+            @include align-items(center);
+        }
+
+        .resource-oontent {
+            padding-left: 100px;
+            text-align: left;
+        }
+    }
+}

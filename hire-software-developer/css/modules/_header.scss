@@ -1,0 +1,42 @@
+header,
+.header {
+    position: fixed;
+    width   : 100%;
+    z-index : 2;
+    @extend .transition;
+    padding: 40px 0 0;
+
+    .header--flex {
+        @include flexbox();
+        @include align-items(center);
+    }
+
+    .top-icons {
+        margin-left: auto;
+
+        &-items {
+            color      : $website-brand-color;
+            font-weight: 600;
+            position: relative;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+
+            i {
+                color       : #221668;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &.fixed-top-menu {
+        background: $base-light-color;
+        margin-top: 0;
+        top       : 0;
+        @extend .transition;
+        padding: 10px 0;
+        @include box-shadow(0, 5px, 10px, rgba(0, 0, 0, 0.1));
+    }
+}

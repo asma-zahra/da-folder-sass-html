@@ -1,0 +1,418 @@
+.steps {
+    // padding: 0 0 100px;
+
+    .sechead {
+        text-align   : center;
+        margin-bottom: 50px;
+    }
+
+    .laststep {
+        @include flexbox;
+
+        .laststep-content {
+            width           : 100%;
+            background-color: #FCF6EF;
+            padding         : 35px 25px 50px;
+
+            img {
+                max-width: 100%;
+                height   : auto;
+            }
+
+            p {
+                font-size: 0.9090rem;
+                color    : #E50914;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-size  : 1.4545rem;
+                color      : $website-brand-color;
+            }
+
+            h5 {
+                font-size: 0.9090rem;
+                color    : $base-font-color;
+                margin   : 15px 0 30px;
+            }
+
+            .claime {
+                font-weight  : 600;
+                font-size    : 1rem;
+                color        : $base-white-color;
+                background   : linear-gradient(90deg, #00B551 80%, #EAEAEA 20%);
+                border-radius: 4px;
+                padding      : 5px 15px;
+            }
+        }
+
+        .laststep-form {
+            width           : 100%;
+            background-color: $base-white-color;
+            padding         : 15px;
+        }
+    }
+
+    .button-row {
+        text-align: center;
+        margin-top: 30px;
+        display   : inline-block;
+        width     : 100%;
+
+        button {
+            font-size: 0.9090rem;
+            padding  : 18px 40px;
+        }
+
+        .js-btn-prev {
+            @extend .btn-primary;
+            background-color: #BEC0C7;
+            color           : $base-white-color;
+        }
+    }
+
+    .forminputs {
+
+        //  @include flexbox;
+        .formfields {
+            width : 50%;
+            float : left;
+            margin: 30px 0;
+
+            .containerChk,
+            .containerSb {
+                color       : #274657;
+                display     : inline-block;
+                position    : relative;
+                padding-left: 40px;
+                cursor      : pointer;
+                font-weight : 700;
+                font-size   : 1rem;
+                color       : $base-font-color;
+                user-select : none;
+
+                input {
+                    position: absolute;
+                    opacity : 0;
+                    cursor  : pointer;
+
+                    &:checked~.checkmark::before {
+                        background-color: $website-brand-color;
+                    }
+                }
+
+                .checkmark {
+                    position     : absolute;
+                    top          : 50%;
+                    left         : 0;
+                    transform    : translateY(-50%);
+                    width        : 30px;
+                    height       : 30px;
+                    border       : 1px solid $website-brand-color;
+                    border-radius: 50%;
+
+                    &::before {
+                        content         : "";
+                        position        : absolute;
+                        top             : 50%;
+                        left            : 50%;
+                        transform       : translate(-50%, -50%);
+                        border-radius   : 50%;
+                        background-color: transparent;
+                        width           : 15px;
+                        height          : 15px;
+                    }
+                }
+            }
+
+            .containerChk {
+                input {
+                    position: absolute;
+                    opacity : 0;
+                    cursor  : pointer;
+
+                    &:checked~.checkmark {
+                        background-color: $website-brand-color;
+                    }
+                }
+
+                .checkmark {
+                    border-radius: 0;
+
+                    &::before {
+                        left         : calc(50% - 6px);
+                        top          : calc(50% - 0px);
+                        width        : 5px;
+                        height       : 10px;
+                        border       : solid $base-light-grey;
+                        border-radius: 0;
+                        border-width : 0 3px 3px 0;
+                        transform    : rotate(45deg) translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+
+    .forminputschecked {
+        max-height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .formfields {
+            width: 25%;
+        }
+    }
+
+    .content {
+        h3 {
+            font-weight   : 700;
+            font-size     : 1.4545rem;
+            text-transform: capitalize;
+            color         : $base-font-color;
+            margin-bottom : 30px;
+            text-align    : center;
+        }
+    }
+
+    //mixins
+    @mixin transition-mix ($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
+        transition-property       : $property;
+        transition-duration       : $duration;
+        transition-timing-function: $timing;
+        transition-delay          : $delay;
+    }
+
+    @mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null) {
+        position: absolute;
+        top     : $top;
+        left    : $left;
+        right   : $right;
+        bottom  : $bottom;
+    }
+
+    .multisteps-form__content {
+        max-width: 70%;
+        margin   : 0 auto;
+    }
+
+    .step_2,
+    .final_step {
+        .multisteps-form__content {
+            max-width: 100%;
+            margin   : 0 auto;
+        }
+    }
+
+    //content styles
+    //multisteps variables
+    $color-secondary            : #6c757d;
+    $color-primary              : #007bff;
+    $btn-offset-vert            : 30px;
+    $btn-circle-decor-dimensions: 20px;
+
+    //multisteps progress styles
+    .multisteps-form__progress {
+        max-width            : 1054px;
+        width                : 100%;
+        margin               : 40px auto;
+        display              : grid;
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+        .multisteps-form__progress-btn {
+            @include transition-mix($duration: .15s);
+            position                         : relative;
+            padding-top                      : $btn-offset-vert;
+            color                            : rgba($color-secondary, .7);
+            text-indent                      : -9999px;
+            border                           : none;
+            background-color                 : transparent;
+            outline                          : none !important;
+            cursor                           : pointer;
+
+            @media (min-width: 500px) {
+                text-indent: 0;
+                font-weight: 500;
+                font-size  : 1.0909rem;
+                color      : $base-grey-color;
+            }
+
+            //circle decoration
+            &:before {
+                @include position-absolute($top: 2px, $left: 50%);
+                display                        : block;
+                width                          : $btn-circle-decor-dimensions;
+                height                         : $btn-circle-decor-dimensions;
+                content                        : '';
+                transform                      : translateX(-50%);
+                transition                     : all .15s linear 0s, transform .15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+                border                         : 2px solid currentColor;
+                border-radius                  : 50%;
+                background-color               : #fff;
+                box-sizing                     : border-box;
+                z-index                        : 3;
+                box-shadow                     : inset 0 0 0px 3px white;
+            }
+
+            //line decoration
+            &:after {
+                @include position-absolute($top  : $btn-offset-vert/4, $left: calc(-50% - #{$btn-circle-decor-dimensions} / 2));
+                @include transition-mix($duration: .15s);
+                display                          : block;
+                width                            : 100%;
+                height                           : 6px;
+                content                          : '';
+                background-color                 : currentColor;
+                z-index                          : 1;
+            }
+
+            //last child - without line decoration
+            &:first-child {
+                &:after {
+                    display: none;
+                }
+            }
+
+            //active styles
+            &.js-active {
+                color: $website-brand-color;
+
+                &:before {
+                    transform       : translateX(-50%) scale(1.2);
+                    background-color: currentColor;
+                }
+            }
+        }
+    }
+
+    //multisteps form styles
+    .multisteps-form__form {
+        position        : relative;
+        background-color: $base-light-grey;
+        padding         : 75px;
+        max-width       : 1054px;
+        width           : 100%;
+        margin          : 0 auto;
+        font-family     : $base-font-family !important;
+
+        .multisteps-form__panel {
+            // @include position-absolute($top: 0, $left: 0);
+            width     : 100%;
+            height    : 0;
+            opacity   : 0;
+            visibility: hidden;
+            display   : none;
+
+            //active panels
+            &.js-active {
+                height    : auto;
+                opacity   : 1;
+                visibility: visible;
+                display   : block;
+            }
+
+            //scaleOut animation
+            &[data-animation="scaleOut"] {
+
+                // transform: scale(1.1);
+                &.js-active {}
+            }
+
+            //slideHorz animation
+            &[data-animation="slideHorz"] {
+                left: 50px;
+
+                &.js-active {
+                    // @include transition-mix($duration: .25s, $timing: cubic-bezier(0.2, 1.13, 0.38, 1.43));
+                    left: 0;
+                }
+            }
+
+            //slideVert animation
+            &[data-animation="slideVert"] {
+                top: 30px;
+
+                &.js-active {
+                    //  @include transition-mix();
+                    top: 0;
+                }
+            }
+
+            //fadeIn animation
+            &[data-animation="fadeIn"] {
+                &.js-active {
+                    // @include transition-mix($duration: .3s);
+                }
+            }
+
+            //scaleOut
+            &[data-animation="scaleIn"] {
+
+                // transform: scale(.9);
+                &.js-active {
+                    //  @include transition-mix;
+                    // transform: scale(1);
+                }
+            }
+        }
+    }
+
+    //multisteps panels styles
+}
+
+@media screen and(max-width:1199.98px) {
+    .steps {
+        .multisteps-form__form {
+            padding: 30px;
+        }
+    }
+}
+
+@media screen and(max-width:991.98px) {
+    .steps {
+        .laststep {
+            .laststep-content {
+                display: none;
+            }
+        }
+
+        .forminputs {
+            .formfields {
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:767.98px) {
+    .steps {
+        .forminputschecked {
+            .formfields {
+                width: 50%;
+            }
+        }
+
+        .button-row {
+
+            .js-btn-prev,
+            button {
+                font-size: 14px;
+                padding  : 10px 20px;
+            }
+        }
+    }
+
+    .steps .multisteps-form__content {
+        max-width: 100%;
+    }
+}
+
+@media screen and(max-width:575.98px) {
+    .steps {
+        .forminputs {
+            .formfields {
+                width: 100%;
+            }
+        }
+    }
+}

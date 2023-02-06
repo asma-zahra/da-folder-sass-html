@@ -1,0 +1,63 @@
+.shop-sec {
+    padding: 0 0 50px;
+    .owl-item {
+        opacity: .3;
+    }
+    .owl-item.center {
+        opacity: 1;
+    }
+    .shopping-box {
+        border: solid 2px $base-black-color;
+        border-radius: 10px;
+        .shopimg {
+            width: 100%;
+            border-radius: 20px;
+        }
+        .shopping-des {
+            background: rgba(211, 237, 246, 0.26);
+            padding: 36px 20px 20px;
+            h4 {
+                font-size: 22px;
+                color: $base-font-color2;
+                font-weight: 500;
+                margin-bottom: 16px;
+            }
+            p {
+                font-size: 16px;
+                color: $base-font-color2;
+                font-weight: 400;
+                margin-bottom: 24px;
+                line-height: 20px;
+            }
+            h5 {
+                font-size: 15px;
+                color: $base-font-color2;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .skills span {
+                display: inline-block;
+                background: $base-font-color2;
+                font-size: 14px;
+                color: $base-white-color;
+                padding: 3px 16px;
+                margin: 0 8px 8px 0;
+                border-radius: 50px;
+            }
+            h6 {
+                font-size: 13px;
+                color: $base-font-color2;
+                margin: 24px 0 20px;
+                span {
+                    font-weight: 700;
+                }
+            }
+            .dis {
+                font-size: 11px;
+                color: #A5A5A5;
+                line-height: 13px;
+                font-weight: 400;
+            }
+        }
+    }
+}

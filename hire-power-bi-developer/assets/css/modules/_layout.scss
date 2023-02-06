@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    color: $base-font-color;
+    font-weight: $base-font-weight;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.59vw;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.container {
+    width: 1470px;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.inner_container {
+    max-width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: $website-brand-color;
+}
+
+.mb-100 {
+    margin-bottom: 80px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.transition {
+    @include transition(all, 0.3s);
+}
+
+.middle_align {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+}
+
+.text_center,
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.shadow {
+    @include box-shadow(0, 30px, 60px, rgba(0, 0, 0, 0.08));
+}
+
+.position-relative {
+    position: relative;
+}
+
+.sec100 {
+    padding: 100px 0;
+}
+
+
+
+
+
+@media (max-width: 1449.98px) {
+    h2 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+
+    .container {
+        width: 1170px;
+    }
+
+    .inner_container {
+        max-width: 100%;
+    }
+
+    .sec100 {
+        min-height: 100vh;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:991.98px) {
+    .container {
+        width: 960px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    .sec100,
+    .formsec,
+    .client-bg,
+    .service_section {
+        padding: 50px 0;
+    }
+
+    .d-md-none {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    header .top-icons,
+    .header .top-icons {
+        margin-right: 0px;
+    }
+
+    .overlay.formsec {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 1.575rem;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}

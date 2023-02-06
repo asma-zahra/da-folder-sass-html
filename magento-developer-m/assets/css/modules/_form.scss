@@ -1,0 +1,115 @@
+.formsec {
+    background-color: #F2FEFF;
+    padding: 70px 0;
+    .form-points {
+        margin-bottom: 50px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            font-size: 16px;
+            color: $base-grey-color;
+            li {
+                position: relative;
+                margin-bottom: 1rem;
+                padding-left: 1.2rem;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url(assets/images/form-check.svg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    left: 0;
+                    top: 3px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+}
+
+.formtamp {
+    background-color: $base-white-color;
+    border-radius: 12px;
+    padding: 40px 15px;
+}
+
+#vecrm-form form {
+    text-align: left;
+}
+
+form .marketing-field .lp-form-field label {
+    color: #0C2543;
+    font-size: 14px;
+    padding-bottom: 0;
+    opacity: 1;
+    font-weight: 400;
+    font-family: $base-font-family;
+}
+
+#vecrm-form form .marketing-field .lp-form-field input,
+#vecrm-form form .marketing-field .lp-form-field select,
+#vecrm-form form .marketing-field .lp-form-field textarea {
+    border: 0.878374px solid #E3E3E3;
+    border-radius: 3.5135px;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #fff;
+    font-weight: 400;
+    font-family: $base-font-family;
+    color: #C4C4C4;
+}
+
+#vecrm-form form .marketing-field .lp-form-field select:invalid {
+    color: #a7a7a7 !important;
+}
+
+#vecrm-form form .marketing-field .lp-form-field select {
+    color: #111 !important;
+}
+
+form .marketing-field .lp-form-field input:focus,
+form .marketing-field .lp-form-field select:focus,
+form .marketing-field .lp-form-field textarea:focus {
+    box-shadow: 0 0 0 0.25rem #eeeefd !important;
+    outline: none;
+}
+
+form .marketing-field .lp-form-field input:focus-visible,
+form .marketing-field .lp-form-field select:focus-visible,
+form .marketing-field .lp-form-field textarea:focus-visible {
+    outline: none !important;
+}
+
+form .marketing-field .lp-form-field input,
+form .marketing-field .lp-form-field select,
+form .marketing-field .lp-form-field textarea {
+    margin-top: 0;
+}
+
+.lp-form-button {
+    @extend .btn-primary;
+}
+
+.step_form .lp-form-button {
+    min-width: 350px !important;
+}
+
+.lp-form-button:focus {
+    outline: none;
+}
+
+#vecrm-form form .columnContainer p {
+    text-align: center;
+}
+
+@media (min-width: 0px) {
+    #vecrm-form .containerWrapper {
+        display: block !important;
+        .columnContainer {
+            width: 100% !important;
+        }
+    }
+}

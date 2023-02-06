@@ -1,0 +1,58 @@
+.icon-skype,
+.icon-envelope,
+.icon-phone {
+    background: url('assets/images/sprite-icons.png') no-repeat;
+    width: 22px;
+    height: 20px;
+    background-position: -153px -4px;
+    display: inline-block;
+}
+
+.icon-envelope {
+    background-position: -81px -2px;
+}
+
+.icon-phone {
+    background-position: -11px -4px;
+}
+
+.icons {
+    background: url('assets/images/sprite-icons.png') no-repeat;
+    width: 40px;
+    height: 40px;
+    background-position: -4px -50px;
+    display: inline-block;
+    &.it-services-icon,
+    &.web-development-icon,
+    &.virtual-assistance-icon,
+    &.digital-marketing-icon,
+    &.finance-accounts-icon,
+    &.engineerning-architecture-icon,
+    &.multimedia-animatio-icon,
+    &.hr-recruitment-icon {
+        width: 48px;
+        height: 48px;
+        background-position: -1px -46px;
+    }
+    &.web-development-icon {
+        background-position: -62px -46px;
+    }
+    &.virtual-assistance-icon {
+        background-position: -128px -46px;
+    }
+    &.digital-marketing-icon {
+        background-position: -190px -46px;
+    }
+    &.finance-accounts-icon {
+        background-position: -254px -44px;
+    }
+    &.engineerning-architecture-icon {
+        background-position: -320px -46px;
+    }
+    &.multimedia-animatio-icon {
+        background-position: -384px -42px;
+    }
+    &.hr-recruitment-icon {
+        background-position: -445px -46px;
+    }
+}

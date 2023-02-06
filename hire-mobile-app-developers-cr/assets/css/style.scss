@@ -1,0 +1,30 @@
+//Partials css
+@import 'partials/global';
+
+//Component css
+@import 'components/mixins';
+@import 'components/flex-grid';
+@import 'components/icons';
+@import 'components/dropdown';
+@import 'components/buttons';
+@import 'components/scrollbar';
+@import 'components/accordian';
+
+// Owl Carousel
+@import 'owl-carousal/owl.carousel';
+
+//Modules css
+@import 'modules/layout';
+@import 'modules/header';
+@import 'modules/banner';
+@import 'modules/app';
+@import 'modules/resources';
+@import 'modules/makeapp-section';
+@import 'modules/form';
+@import 'modules/form-section';
+@import 'modules/free-trial';
+@import 'modules/journey-chart';
+@import 'modules/clients';
+@import 'modules/silkslider';
+@import 'modules/footerbar';
+@import 'modules/footer';

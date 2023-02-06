@@ -1,0 +1,22 @@
+.trendlist {
+    margin-top: 70px;
+    font-size: 18px;
+
+    li {
+        display:block;
+        padding: 8px;
+        margin-bottom: 26px;
+        font-size: 0;
+        span {
+            display: inline-block;
+            padding: 14px 38px;
+            background: #191919;
+            font-size: 18px;
+        }
+        .active {
+            background: $website-brand-color;
+            color: $base-theme-color;
+            font-weight: 700;
+        }
+    }   
+}

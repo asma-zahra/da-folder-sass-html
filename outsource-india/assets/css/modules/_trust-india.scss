@@ -1,0 +1,81 @@
+.trust-india {
+    background-image: $trust-india;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 100px 0;
+    .sechead {
+        margin-bottom: 30px;
+    }
+    .flagpart {
+        @include flexbox;
+        @include flex-direction(column);
+        width: 100%;
+        // @include align-items(center);
+        .flag-row {
+            @include flexbox;
+            // @include align-items(center);
+            .flag-item {
+                padding: 25px 5px;
+                width: 100%;
+                font-size: 18px;
+                &:nth-child(1),
+                &:nth-child(3) {
+                    border-bottom: 1px solid #D9D9D9;
+                }
+                &.pt-50 {
+                    padding-top: 100px;
+                }
+                img {
+                    margin: 0 auto;
+                }
+                b {
+                    color: $base-font-color1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1199.98px) {
+    .trust-india {
+        .flagpart {
+            max-width: 950px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    .trust-india {
+        padding: 50px 0;
+        .flagpart {
+            .flag-row {
+                .flag-item {
+                    font-size: 14px;
+                    &.pt-50 {
+                        padding-top: 50px;
+                    }
+                    img {
+                        max-width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    .trust-india {
+        .flagpart {
+            .flag-row {
+                .flag-item {
+                    font-size: 12px;
+                    img {
+                        max-width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #010256;
+
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 139.5%;
+    margin-bottom: 1rem;
+
+}
+
+h1,
+p {
+    margin-left: 6.8rem;
+}
+
+h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 24.2px;
+    line-height: 33px;
+}
+
+h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18.7px;
+    line-height: 31.32px;
+}
+
+h4 {
+    font-family: 'Manrope';
+    font-weight: 300;
+    font-size: 28.469px;
+    line-height: 39px;
+    margin-top: 1rem;
+}
+
+h4 strong {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 139.5%;
+    margin-bottom: 4rem;
+}
+
+blockquote {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+blockquote::before {
+    content: url("img/quote.png");
+    display: inline-block;
+    position: absolute;
+    left: -29px;
+    top: -14px;
+}
+
+blockquote::after {
+    content: url("img/quote.png");
+    transform: rotate(180deg);
+    display: inline-block;
+    position: absolute;
+    right: -13px;
+    bottom: -29px;
+}
+
+#banner {
+    background: url('img/banner.png') no-repeat;
+    /* background:linear-gradient(134.27deg, rgba(115, 237, 186, 0.2) 5.56%, rgba(238, 242, 22, 0.2) 49.74%, rgba(119, 210, 47, 0.2) 93.01%); */
+    padding: 5rem 11.37rem 5rem 8rem;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.reduce_expenses_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reduce_expenses_left.reduce_expenses_right {
+    flex-grow: 1;
+    min-width: 50%;
+}
+
+.client_info {
+    display: flex;
+
+}
+
+.quote {
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.form_wrapper {
+    background: #FFFFFF;
+    border: 1px solid rgba(180, 185, 210, 0.3);
+    box-shadow: 0px 20px 100px rgba(4, 87, 147, 0.15);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+#info {
+    padding: 6rem 11.37rem 6rem 8rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+li img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Responsive code */
+
+@media only screen and (max-width : 1750px) {
+    #banner {
+        padding: 5rem 4rem 5rem 4rem;
+    }
+}
+
+@media only screen and (max-width : 1530px) {
+    blockquote {
+        font-size: 1.5rem;
+    }
+
+    #banner {
+        padding: 5rem 2rem 5rem 2rem;
+    }
+
+    #info {
+        padding: 6rem 2rem 6rem 2rem;
+    }
+}
+
+@media only screen and (max-width : 1530px) {
+    .quote {
+        margin-left: 0.2rem;
+    }
+}
+
+@media only screen and (max-width : 1365px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    ul {
+        gap: 3rem;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .client_image img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width : 1229px) {
+    blockquote {
+        font-size: 1.2rem;
+    }
+
+    .client_image img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width : 1150px) {
+    .client_info {
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    h2 {
+        font-size: 24.2px;
+    }
+
+    h3 {
+
+        font-size: 18.7px
+    }
+
+    blockquote {
+        font-size: 30px;
+    }
+    blockquote::after {
+        right: 155px;
+    }
+
+    .quote {
+        min-width: 50%;
+    }
+
+    .client_image {
+        min-width: 50%;
+    }
+
+    .client_image img {
+        width: auto;
+        height: auto;
+    }
+
+    h1,
+    p {
+        margin-left: 0rem;
+    }
+
+    h2,
+    h3 {
+        text-align: left;
+    }
+
+    .form_wrapper {
+        margin-top: 4rem;
+    }
+
+    #banner {
+        padding: 5rem 6rem 5rem 6rem;
+    }
+
+    #info {
+        padding: 5rem 6rem 5rem 6rem;
+    }
+
+    ul {
+        gap: 2rem;
+    }
+
+    li {
+        min-width: 30%;
+        flex-grow: 1;
+        margin-bottom: 2rem;
+
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    h1,
+    p {
+        text-align: center;
+    }
+
+    .reduce_expenses_row {
+        flex-direction: column;
+    }
+
+    .form_wrapper img {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width : 950px) {
+    .client_info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+.client_image img{
+    width: 100%;
+    height: auto;
+}
+.quote{
+    margin-top: 2rem;
+    justify-self: center;
+    align-items: center;
+    }
+blockquote::after {
+        right: 53px;
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    #banner {
+        background: linear-gradient(134.27deg, rgba(115, 186, 237, 0.16) 5.56%, rgba(22, 242, 216, 0.16) 49.74%, rgba(210, 165, 47, 0.16) 93.01%);
+    }
+
+    .client_info {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .quote {
+        min-width: 100%;
+    }
+
+    li {
+        min-width: 100%;
+        flex-grow: 1;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        text-align: center;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+    .client_image img {
+        width: 100%;
+        height: auto;
+    } 
+    .client_image{
+        min-width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    blockquote::after {
+        right: 18px;
+    }
+
+    blockquote::before {
+        left: 18px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .form_wrapper {
+        margin-top: 1rem;
+    }
+
+    #banner {
+        padding: 5rem 2rem 5rem 2rem;
+    }
+    .info{
+        padding: 5rem 2rem 5rem 2rem;
+    }
+
+    .reduce_expenses_left {
+        margin-bottom: 2rem;
+
+    }
+
+    .client_info {
+        flex-direction: column;
+    }
+
+    .quote {
+        margin-top: 1.5rem;
+
+    }
+
+    blockquote {
+        text-align: center;
+    }
+    li {
+        min-width: 100%;
+        flex-grow: 1;
+        margin-bottom: 1.5rem;
+    }
+}
+@media only screen and (max-width : 375px) {
+    blockquote::before {
+        left: 23px;
+    }
+    blockquote {
+        font-size: 24px;
+    }
+
+}

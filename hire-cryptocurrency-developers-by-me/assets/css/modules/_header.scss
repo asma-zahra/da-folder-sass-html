@@ -1,0 +1,96 @@
+header,
+.header {
+    position: fixed;
+    width   : 100%;
+    z-index : 2;
+    @extend .transition;
+    padding: 0.675rem 0;
+    z-index: 9999;
+    border-bottom: solid 4px $base-black-color;
+    background: #FFF;
+
+    &.fixed-top-menu {
+        margin-top: 0;
+        top: 0;
+        padding: 10px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    }
+
+    .header--flex {
+        @include flexbox();
+        @include align-items(center);
+    }
+    
+    .top-icons {
+        margin-left: auto;
+        font-size  : 0;
+
+        
+
+        &-items {
+            position    : relative;
+            cursor      : pointer;
+            width       : 42px;
+            height      : 42px;
+            border-radius: 100px;
+            border: solid 1px $base-black-color;
+            
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+            em {
+                font-style: normal;
+            }
+
+           
+
+            &.dropdown {
+                margin-right: 0;
+                border-right: 0;
+              
+            }
+
+            .icon-envelope, .icon-phone, .icon-skype {
+                background-image: url(assets/images/sprite-icon.png);
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+            i.icon-envelope{
+                background-position: -63px -4px;
+                width: 40px;
+                height: 40px;
+            }
+            i.icon-skype {
+                background-position: -115px -4px;
+                width: 40px;
+                height: 40px;
+            }
+            i.icon-phone{
+                background-position: -8px -4px;
+                width: 40px;
+                height: 40px;
+            }
+
+
+        }
+        .dropdown-item {
+            font-size: 19px;
+        }
+    }
+
+    
+}
+
+@media (max-width: 767.98px) {
+    header, .header {
+        padding-left: 0;
+    }
+   
+    .flexbox {
+        margin: 0;
+    }
+}

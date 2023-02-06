@@ -1,0 +1,13 @@
+footer {
+    background-color: #1D2E4C;
+    text-align: center;
+    padding: 25px 0 15px;
+    color: $base-white-color;
+    font-size: 11px;
+    a {
+        color: $website-brand-color;
+    }
+    .container {
+        opacity: 0.6;
+    }
+}

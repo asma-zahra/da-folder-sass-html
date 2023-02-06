@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+.form-section {
+  padding: 100px 0;
+}
+.from-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form-info {
+  .red {
+    color: #e91015;
+  }
+  .md-text {
+    font-size: 45px;
+    font-family: "Satisfy", cursive;
+  }
+  h2 {
+    margin-bottom: 56px;
+    text-align: center;
+    img {
+      transform: translateY(16px);
+      display: inline-block;
+    }
+  }
+  h4 {
+    margin-bottom: 100px;
+    font-weight: 400;
+    .cost {
+      color: #1a1a1a;
+      text-decoration: line-through;
+      font-weight: 500;
+    }
+  }
+  .avatars {
+    position: relative;
+    margin-bottom: 48px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+    .avatar-img {
+      width: 116px;
+      height: 116px;
+      border-radius: 100%;
+      border: 3px solid #b9b9b9;
+      margin-left: -25px;
+      overflow: hidden;
+      padding-top: 10px;
+      background: #fff;
+      &:first-child {
+        z-index: 1;
+      }
+      &:nth-child(2) {
+        z-index: 2;
+      }
+      &:nth-child(3) {
+        z-index: 3;
+      }
+      &:nth-child(4) {
+        z-index: 4;
+      }
+    }
+  }
+  .advice {
+    font-size: 30px;
+    color: #000;
+    font-family: "Satisfy", cursive;
+  }
+  .avatar-img img {
+    object-fit: contain;
+    height: 100%;
+    object-position: bottom;
+  }
+}
+
+.get_started_form {
+  background: #f4f1ff;
+  border-radius: 20px;
+  padding: 62px 85px;
+  position: relative;
+
+  h3 {
+    font-size: 32px;
+    color: #000;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1449.98px) {
+  .get_started_form {
+    padding: 30px 45px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .get_started_form {
+    padding: 30px 20px;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .from-wrapper {
+    flex-direction: column;
+    h2 {
+      text-align: left;
+      margin-bottom: 35px;
+    }
+    h4 {
+      text-align: left;
+      margin-bottom: 35px;
+    }
+    .advice {
+      text-align: left;
+    }
+    .flex-6 {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+    .avatars {
+      justify-content: flex-start;
+      padding-left: 25px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+// ends here

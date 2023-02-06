@@ -1,0 +1,14 @@
+footer {
+    background-color: #003629;
+    text-align: center;
+    color: $base-white-color;
+    line-height: 24px;
+    position: relative;
+    padding: 2rem 0 1rem;
+    z-index: 1;
+    font-size: 18px;
+    
+    a {
+        color: $website-brand-color;
+    }
+}

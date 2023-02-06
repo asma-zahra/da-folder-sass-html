@@ -1,0 +1,247 @@
+.banner {
+    position: relative;
+
+    &_img {
+        position: absolute;
+        top     : 0;
+        left    : 0;
+    }
+
+    &::after {
+        content        : '';
+        background     : url('../images/banner-curve-bg.svg') no-repeat;
+        width          : 100%;
+        height         : 350px;
+        background-size: 100%;
+        position       : absolute;
+        bottom         : -140px;
+        left           : 0;
+    }
+
+    &_content {
+        @include flexbox();
+        @include align-items(center);
+        position      : relative;
+        // padding-top: 240px;
+        height        : 100vh;
+
+        &_left {
+            flex : 0 0 60%;
+            width: 60%;
+
+            h3 {
+                font-weight: 500;
+            }
+
+            h1 {
+                margin-top: 30px;
+                position  : relative;
+
+                span {
+                    position                 : absolute;
+                    top                      : 3px;
+                    left                     : 3px;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: #fff;
+                    color                    : transparent;
+                }
+            }
+
+            .btn-primary {
+                margin-top: 100px;
+            }
+        }
+
+        &_right {
+            flex    : 0 0 40%;
+            width   : 40%;
+            position: relative;
+
+            .emp {
+                &_skills {
+                    .profile_skills {
+                        position   : absolute;
+                        top        : 0;
+                        left       : 0;
+                        z-index    : 2;
+                        transform  : translateZ(0);
+                        will-change: transform;
+
+                        &.skill_1,
+                        &.skill_3,
+                        &.skill_4,
+                        &.skill_5 {
+                            top              : -60px;
+                            left             : 25%;
+                            -webkit-animation: mover 1s infinite alternate;
+                            animation        : mover 1s infinite alternate;
+                        }
+
+                        &.skill_2 {
+                            top              : -45px;
+                            left             : -70px;
+                            -webkit-animation: mover2 1.3s infinite alternate;
+                            animation        : mover2 1.3s infinite alternate;
+                        }
+
+                        &.skill_3 {
+                            top              : auto;
+                            left             : auto;
+                            bottom           : -42%;
+                            right            : 38%;
+                            -webkit-animation: mover3 1.2s infinite alternate;
+                            animation        : mover3 1.2s infinite alternate;
+                        }
+
+                        &.skill_4 {
+                            top              : 30%;
+                            left             : 73%;
+                            -webkit-animation: mover4 1.6s infinite alternate;
+                            animation        : mover4 1.6s infinite alternate;
+                        }
+
+                        &.skill_5 {
+                            top : 92%;
+                            left: -14%;
+                        }
+                    }
+                }
+
+                &_detail {
+                    background: $website-brand-color-2;
+                    padding   : 15px;
+                    @extend .common_radius;
+                    position  : absolute;
+                    bottom    : -70px;
+                    right     : 0;
+                    text-align: center;
+                    box-shadow: (0 5px 20px rgba(1, 82, 170, 0.8));
+
+                    h2 {
+                        font-size    : 1.667rem;
+                        border-bottom: solid 1px $base-light-color;
+                        display      : inline-block;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                &_desig {
+                    font-size : 0.778rem;
+                    background: rgba(255, 255, 255, 0.1);
+                    @extend .rounded_radius;
+                    padding    : 5px 10px;
+                    font-weight: 600;
+                }
+
+                &_project {
+                    font-size  : 0.8889rem;
+                    font-weight: 700;
+                    margin-top : 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes mover2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@-webkit-keyframes mover3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes mover3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-12px);
+    }
+}
+
+@-webkit-keyframes mover4 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes mover4 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+.scrolldown {
+        width            : 160px;
+        height           : 160px;
+        right            : 50px;
+        bottom           : 0;
+        -webkit-animation: spinnerRotateseven 25s linear infinite;
+        animation        : spinnerRotateseven 25s linear infinite;
+}
+
+@keyframes spinnerRotateseven {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-375px);
+        transform        : rotate(0deg) translateX(-375px);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-375px);
+        transform        : rotate(360deg) translateX(-375px);
+    }
+}

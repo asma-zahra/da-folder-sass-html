@@ -1,0 +1,42 @@
+.resource_profile {
+    position: relative;
+
+    h2.marque_heading {
+        font-size: 6.6667rem;
+        white-space: nowrap;
+        overflow: hidden;
+        // position: absolute;
+        @include rotate(-5);
+        font-weight: 400;
+        
+        span {
+            animation: marquee 5s linear infinite;
+            padding-left: 100%;
+            display: inline-block;
+        }
+    }
+
+    h3 {
+        margin-top: 100px;
+    }
+    &_row {
+        @extend .flexbox;
+    }
+    &_right {
+        h2 {
+            font-size: 4.444rem;
+        }
+        h3 {
+            text-align: left;
+        }
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+  }

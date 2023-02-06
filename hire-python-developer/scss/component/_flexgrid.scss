@@ -1,0 +1,21 @@
+.d-flex {
+    @include d-flex;
+}
+.justify-content-center {
+    @include justify-content-center(center)
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    @include align-items-center(center) 
+}
+.align-self-center {
+    @include align-self-center(center)
+}
+.flex-wrap-wrap {
+    @include flex-wrap-wrap(wrap)
+}
+.flex-direction-column {
+    @include flex-direction-column(column) 
+}

@@ -1,0 +1,58 @@
+.btn-primary {
+    position     : relative;
+    padding      : 17px 29px;
+    border-radius: 5px;
+    background   : $primary-color;
+    display      : inline-block;
+    border       : none;
+    font-size    : 22px;
+    font-weight  : 700;
+    font-family  : $base-font-family;
+    cursor       : pointer;
+    color        : $base-white-color;
+    @extend .transition;
+
+    &:hover {
+        @include scale(1.03);
+    }
+}
+.btn-secondary {
+    position: relative;
+    padding: 12px 16px;
+    border-radius: 5px;
+    background: #000000;
+    border-radius: 2px;
+    display: inline-block;
+    border: none;
+    font-size: $button-font-size;
+    font-weight: 700;
+    font-family: $base-font-family;
+    cursor: pointer;
+    color: $base-white-color;
+    @extend .transition;
+
+    &:hover {
+        @include scale(1.03);
+    }
+}
+
+.btn-outline-primary {
+    color: $website-brand-color;
+    @include border-radius(12px);
+    @include box-shadow(0, 0.5rem, 1rem, rgba(0, 0, 0, 0.15));
+    background: $base-white-color;
+    border    : 1px solid $website-brand-color;
+    font-size : 1.125rem;
+    cursor    : pointer;
+    padding   : 10px 15px;
+    display   : inline-block;
+    height    : 50px;
+}
+
+
+@media (max-width: 1199.98px) {
+    .btn-primary {
+        padding: 13px 32px;
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,68 @@
+.clients_section {
+    padding: 100px 0;
+
+    .clients_slider {
+        position: relative;
+
+
+        .clients_wrapper {
+
+
+            .clients_img {
+
+                img {
+                    text-align: center;
+                }
+            }
+
+            .clients_article {
+
+                .quote-icon {
+                    margin-bottom: 50px;
+                }
+
+                p {
+                    font-size: 24px;
+                    margin-bottom: 36px;
+                }
+
+                .clients_name {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #000000;
+                    margin-bottom: 3px;
+                }
+
+                .designation {
+                    font-size: 20px;
+                    color: #707070;
+                    font-weight: 400;
+                }
+            }
+        }
+
+
+
+    }
+
+    .owl-carousel .owl-dots {
+        padding-right: 89px
+    }
+
+    .owl-carousel .owl-dots button.owl-dot {
+        width: 21px;
+        height: 21px;
+        background: #EFEFEF;
+    }
+
+    .owl-carousel .owl-dots button.owl-dot.active {
+        background: $base-font-color;
+        width: 50px;
+        height: 21px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,32 @@
+.dropdown {
+    &-menu {
+        position  : absolute;
+        right     : -125px;
+        top       : 50px;
+        background: #fff;
+        @include box-shadow(0, 0, 32px, rgba(17, 17, 35, 0.12));
+        width      : 250px;
+        white-space: nowrap;
+        padding    : 16px;
+        @include border-radius(15px);
+        @extend .transition;
+        // opacity   : 0;
+        // visibility: hidden;
+    }
+
+    &-item {
+        @include flexbox();
+        @include align-items(center);
+        text-decoration: none;
+        color          : $base-font-color;
+        padding        : 16px;
+
+        img {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background: $base-light-grey;
+        }
+    }
+}

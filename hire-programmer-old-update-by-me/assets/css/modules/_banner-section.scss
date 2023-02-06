@@ -1,0 +1,57 @@
+.banner {
+    // @include gradient(#edf4f9, #fff);
+    // padding            : 0 0 0 3rem;
+    background: $base-white-color;
+    position  : relative;
+    @include flexbox();
+    @include align-items(center);
+
+    &_left {
+        flex : 0 0 50%;
+        width: 50%;
+
+        h3 {
+            margin-top   : 30px;
+            margin-bottom: 80px;
+            position     : relative;
+
+            span {
+                color    : $highlight-color;
+                font-size: 1.7272rem;
+            }
+        }
+
+        .btn-primary {
+            &::after {
+                content        : '';
+                background     : url('assets/images/curve-arrow.svg') no-repeat;
+                width          : 140px;
+                height         : 130px;
+                background-size: contain;
+                position       : absolute;
+                right          : -7rem;
+                bottom         : 10px;
+            }
+        }
+    }
+
+    &_right {
+        flex         : 0 0 50%;
+        width        : 50%;
+        padding-right: 0;
+        text-align: right;
+        // @include flexbox();
+        // @include justify-content(end);
+
+        img {
+            display: inline-block;
+        }
+        video {
+            display: block;
+        }
+    }
+
+    &_content {
+        padding-left: 245px;
+    }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.624" height="57.88" viewBox="0 0 38.624 57.88">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 35px;
+        text-anchor: middle;
+        font-family: Poppins;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Strike_5" data-name="Strike 5">
+    <path class="cls-1" d="M786.673,6930.56h22.654a8,8,0,0,1,8,8v41.88a8,8,0,0,1-8,8H786.673a8,8,0,0,1-8-8v-41.88A8,8,0,0,1,786.673,6930.56Z" transform="translate(-778.688 -6930.56)"/>
+    <path class="cls-2" d="M780,6935.14a3.556,3.556,0,0,1,3.881-3.23h3.737v1.62a1.274,1.274,0,0,0,1.1,1.01h18.522a1.525,1.525,0,0,0,1.142-1.01v-1.62H812.3a3.471,3.471,0,0,1,3.665,3.23v48.51a3.364,3.364,0,0,1-3.665,3.34H783.883s-3.881.13-3.881-3.34v-48.51Z" transform="translate(-778.688 -6930.56)"/>
+  </g>
+  <text id="M" class="cls-3" x="19.311" y="41.283">M</text>
+</svg>

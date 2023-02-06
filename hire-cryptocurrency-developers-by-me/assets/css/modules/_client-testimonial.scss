@@ -1,0 +1,94 @@
+.client-section {
+  padding: 145px 0;
+  background: $base-font-color;
+  .mb-110 {
+    margin-bottom: 110px;
+}
+}
+figure {
+  position: relative;
+    .bg-blur{
+      position: relative;
+      overflow: hidden;
+      &::after{
+        position: absolute;
+        content: "";
+        width: 154px;
+        height: 154px;
+        background: rgba(128,84,255,0.5);
+        filter: blur(100px);
+        top: 0;
+        transform: translate(-50%, 55%);
+        left: 0;
+        
+        z-index: -1;
+      }
+    }
+  img {
+    margin: 0 auto;
+    margin-bottom: 86px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 44%;
+    left: 48%;
+    width: 38.65px;
+    height: 41.07px;
+    background: url("assets/images/quote.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+figcaption {
+  blockquote {
+    font-weight: 500;
+    font-size: 24px;
+    color: $base-white-color;
+  }
+  hr {
+    width: 35px;
+    height: 2px;
+    margin: 0 auto;
+    background: $website-brand-color;
+    border: none;
+    display: inline-block;
+  }
+  .client-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: $base-white-color;
+  }
+  .client-address {
+    font-weight: 500;
+    font-size: 20px;
+    color: $base-font-gray-color;
+  }
+}
+
+
+.owl-carousel .owl-dots button.owl-dot{    
+width: 13px;
+height: 13px;
+background: #4F4F4F;
+
+}
+.owl-carousel .owl-dots button.owl-dot.active {
+    background: $primary-color;
+    box-shadow: 0px 0px 0px 8px #2e4040;
+}
+
+@media (max-width: 794.98px) {
+
+  figcaption {
+    blockquote {
+     br{
+      display: none;
+     }
+    }
+  }
+}

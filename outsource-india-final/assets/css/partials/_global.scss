@@ -1,0 +1,55 @@
+$base-font-color: #727180;
+$base-font-color1: #0E1422;
+$base-font-color2: #01CBAD;
+$base-font-family: 'Inter',
+sans-serif;
+$base-font-family-2: 'Rajdhani',
+sans-serif;
+$base-font-size: 1rem;
+$base-font-weight: 400;
+$base-line-height: 1.4;
+$base-light-color: #F7F4EF;
+$base-grey-color: #606060;
+$base-light-grey: #F9F9FB;
+$base-white-color: white;
+$base-black-color: black;
+$website-brand-color: #4102C9;
+$highlight-color: #FEF9C2;
+$border-color: #9496A1;
+$sucess-color: #89D192;
+$base-font-color1: #0E1422;
+$get-trail-black: #020322;
+//HEADER VARIABLES
+$header-height: 130px;
+// BUTTONS VARIABLES
+$primary-color: $website-brand-color;
+$button-font-size: $base-font-size;
+$button-height: 65px;
+//FIELD VARIABLES
+$field-height: 50px;
+$bg-banner: url('assets/images/banner-bg.jpg');
+$trust-india: url('assets/images/trust-india.svg');
+$bg-testimonial: url('assets/images/testimonial.png');
+.blur_circle::before {
+    content: '';
+    position: absolute;
+    background: rgba(254, 123, 3, 0.17);
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    z-index: -9;
+}
+
+.blur_circle::after {
+    content: '';
+    position: absolute;
+    background: rgba(3, 88, 254, 0.17);
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    z-index: -9;
+}

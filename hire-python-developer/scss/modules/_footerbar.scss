@@ -1,0 +1,65 @@
+.footerbar {
+   background: linear-gradient(180deg,transparent 50%,#191919 50%);
+    .footer-outer {
+        z-index: 1;
+        position: relative;
+
+        &:after,  &:before{
+            content: '';
+            position: absolute;
+            background-position: left bottom;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 3.43vw;
+            height: 20.10vw;
+            top: 0;
+            z-index: 22;
+        }
+        &:after {
+            right: 0;
+            background-image: url(../images/frameright.svg);
+        }
+        &:before {
+            left: 0;
+            background-image: url(../images/frameleft.svg);
+        }
+        .btninner {
+            position: relative;
+            z-index: 1;
+        }
+    } 
+    .white-box {
+        padding: 4.68vw 1.04vw;
+    }
+     h2 {
+         color: $base-theme-color;
+     }
+     p {
+        font-family: 'IBM Plex Mono', monospace;
+         font-size: 21px;
+         color: rgba(51, 51, 51, 0.8);
+         margin-bottom: 2.08vw;
+         letter-spacing: -0.01em;
+     }
+
+     
+}
+footer {
+    background: #191919;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: $base-font-family;
+    font-size: 16px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing:1px;
+    line-height: 28px;
+
+    a {
+        color: $base-font-color;
+
+       &:hover {
+           color: $base-font-color-2;
+       } 
+    }
+
+}

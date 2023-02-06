@@ -1,0 +1,423 @@
+@media screen and (min-width: 576px) {
+    .container, .containerlg, .header .container  {
+        max-width: 540px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container, .containerlg, .header .container  {
+        max-width: 720px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container, .containerlg, .header .container  {
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container, .containerlg, .header .container  {
+        max-width: 1160px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .containerlg, .header .container  {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .banner .banner-video {
+      max-width: 41.02vw;
+      max-height: 20.71vw;
+    }
+    .formsec .formright .white-box {
+        padding: 30px 10px;
+    }
+    
+   
+    .footerbar .footer-outer:after, .footerbar .footer-outer:before {
+        height: 22.60vw;
+    }
+
+  }
+  @media screen and (max-width: 1280px) {
+    .formsec .formright {
+        width: 596px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+      h2 {
+        font-size: 2.92vw;
+      }
+      h3 {
+          font-size: 2vw;
+      }
+    .banner {
+      height: auto;
+      padding: 16.29vw 0;
+          h3 {
+            font-size: 2.05vw;
+          }
+         
+        .banner-video {
+          max-width: 51.02vw;
+          max-height: 31.63vw;
+          margin: 3.92vw auto 0;
+        }
+
+      }
+      .progress-container {
+          display: none;
+      }
+      .profile .profile-box {
+            max-width: 263px;
+            height: 400px;
+        }
+        .profile .arrow {
+            padding: 2px 0px;
+            max-width: 170px;
+        }
+        .profile .profileinfo h5 {
+            font-size: 18px;
+        }
+        .profile .profileinfo h3 {
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+        .profile .profileinfo {
+            padding: 39px 10px 10px 10px;
+        }
+        .profile .arrowup {
+            padding: 0;
+        }
+        .profile .profileinfo .skills {
+            margin: 10px 0;
+        }
+        .profile .profileinfo .skills li {
+            padding: 2px 10px;
+        }
+        .profile .profileinfo p {
+            font-size: 15px;
+            line-height: 21px;
+        }
+        .trendlist li span {
+            padding: 12px 26px;
+            font-size: 14px;
+        }
+        .formsec {
+
+            h4  {
+                font-size: 22px;
+                &:after {
+                    width: 113px;
+                    height: 103px;
+                    bottom: 0;
+                } 
+            }
+            .formlist li {
+                font-size: 22px;
+                &:after {
+                    top: 15px;
+                }
+            }
+            .formright {
+                max-width: 500px;
+                margin-left: 20px;
+            }
+        }
+        .clientsec .clientleft .clientimg {
+            width: 135px;
+            height: 154px;
+        }
+        .clientsec p {
+            font-size: 24px;
+        }
+        .footerbar p {
+            font-size: 15px;
+            margin-bottom: 3.08vw;
+        }
+        .footerbar .footer-outer:after, .footerbar .footer-outer:before {
+            height: 25.6vw;
+            width: 4.43vw;
+        }
+        .maincontainer .experts .container_scroll .video-frame {
+            max-width: 298px;
+        }
+        .itemcontent p {
+            font-size: 16px;
+        }
+        .gridouter {
+            display: none;
+        }
+
+
+
+    }
+
+
+    @media screen and (max-width: 991px) {
+        section {
+            padding: 50px 0;
+        }
+        .profile {
+            flex-flow: wrap;
+            justify-content: center;
+        }
+        .banner .theme-btn {
+            font-size: 16px;
+            max-width: 354px;
+        }
+        .theme-btn {
+            font-size: 16px;
+            max-width: 354px;
+        }
+        
+        .profile .profile-box {
+            margin-bottom: 40px;
+        }
+        .formouter {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .formsec .formright {
+            margin: 30px auto;
+            max-width: 100%;
+        }
+        .formsec .formleft {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+        .clientsec .clientleft .clientimg {
+            width: 95px;
+            height: 107px;
+        }
+        .clientsec p {
+            font-size: 19px;
+            line-height: 29px;
+        }
+        .clientsec .sub {
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+        .clientsec h5 {
+            font-size: 22px;
+        }
+        .formsec h4:after{
+            display: none;
+        }
+        .itemvideo {
+            display: none;
+        }
+        .maincontainer .experts .container_scroll .white-box {
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+        .maincontainer .experts .container_scroll {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .maincontainer .experts .container_scroll .itemcontent {
+            width: 100%;
+        }
+        .profile, .trendlist {
+            margin-top: 50px;
+        }
+        .trendlist li span {
+            display: inline-block;
+            padding: 14px 16px;
+            background: #191919;
+            font-size: 14px;
+        }
+        .formsec h4 {
+            font-size: 16px;
+            padding: 20px 0;
+            margin-bottom: 0px;
+        }
+        .formsec .formlist li {
+            font-size: 16px;
+            padding: 5px 27px;
+            display: inline-block;
+        }
+        .formsec .formlist li:after {
+            top: 11px;
+        }
+        .banner-video, .gridouter {
+            display: none;
+        }
+
+      }
+      @media screen and (max-width:768px) {
+        h2 {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        h4 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .banner {
+          padding: 21.29vw 0;
+            h3 {
+              font-size: 2.75vw;
+            }
+            
+           
+            .banner-video {
+              max-width: 61.02vw;
+              max-height: 38.71vw;
+              margin: 5.92vw auto 0;
+            }
+        }
+       
+        
+        
+        
+      
+        .formsec h4 {
+            font-size: 16px ;
+            padding: 20px 0;
+            margin-bottom: 0px;
+        }
+        .formsec .formlist li {
+            font-size: 16px;
+            padding: 5px 27px;
+        }
+        .formsec .formlist li:after {
+            top: 11px;
+        }
+        
+        .footerbar .footer-outer:after, .footerbar .footer-outer:before {
+            display: none;
+        }
+      
+        
+        .footerbar {
+            margin-top: 50px;
+        }
+        
+        
+      }
+     
+      @media screen and (max-width:767px) { 
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        h4 {
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 12px;
+        }
+        .banner {
+            padding: 27.29vw 0 16vw;
+
+            h1 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+            
+            .theme-btn {
+                max-width: 269px;
+                height: 58px;
+                font-size: 16px;
+            }
+           
+            
+        }
+        .theme-btn {
+            max-width: 269px;
+            height: 58px;
+            font-size: 16px;
+        }
+            .logo img {
+                max-width: 150px;
+            } 
+            header.header .dflex .top-icons em{
+                font-size: 0;
+            }
+            .profile .profile-box {
+                max-width: 100%;
+            }
+            .profile .proimg {
+                width: 100%;
+            }
+            .trendlist li {
+                margin-bottom: 10px;
+            }
+            .trendlist li span {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+            
+            .clientsec {
+                flex-direction: column;
+            }
+            .clientsec .clientleft {
+                width: 75%;
+            }
+            .clientsec .clientright {
+                width: 100%;
+                margin: 30px 0 0 0;
+            }
+            .clientsec p {
+                font-size: 15px;
+                line-height: 26px;
+            }
+            .clientsec .clientright:before {
+                content: '';
+                position: absolute;
+                top: 22px;
+                right: 17px;
+                width: 49px;
+                height: 39px;
+                background: url(../images/qutes.png) no-repeat;
+                background-size: 100%;
+            }
+            
+            footer {
+                font-size: 12px;
+                line-height: 20px;
+            }
+            /* .formsec #vecrm-form form .columnContainer .lp-form-button, .theme-btn {
+                font-size: 16px;
+                padding: 14px 20px;
+                height: 48px;
+                line-height: 1;
+                max-width: 272px;
+            }
+            .formsec .white-box {
+                padding: 20px;
+            } */
+            .maincontainer .experts .container_scroll .white-box {
+                padding: 20px;
+                margin: 20px 0;
+            }
+            .footerbar p {
+                font-size: 12px;
+                margin-bottom: 20px;
+      }
+    }
+    @media screen and (max-width:320px) { 
+        .formsec .formright .white-box {
+            padding: 20px 0px;
+        }
+        .lp-form-button {
+            font-size: 15px !important;
+        }
+        
+    }
+
+
+  
+
+
+

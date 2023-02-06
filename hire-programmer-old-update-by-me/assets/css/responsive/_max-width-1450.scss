@@ -1,0 +1,24 @@
+@media (max-width: 1449.98px) {
+    .container {
+        max-width: 1140px;
+    }
+    .banner_content {
+        padding-left: 45px;
+    }
+    .banner {
+        &_left {
+            .btn-primary {
+                &::after {
+                    width : 100px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+    h1 {
+        font-size: 2.666rem;
+    }
+    .banner_left h3 {
+        margin-bottom: 50px;
+    }
+}

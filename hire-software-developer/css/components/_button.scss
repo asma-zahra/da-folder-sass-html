@@ -1,0 +1,20 @@
+.btn-primary {
+    background : $primary-button-color;
+    font-size  : $button-font-size;
+    font-family: $base-font-family;
+    color      : $base-light-color;
+    border     : solid 2px #DA0036;
+    @include border-radius(100px);
+    @include box-shadow(0, 5px, 40px, rgba(234, 40, 102, 0.6));
+    height    : 70px;
+    min-width : 270px;
+    padding   : 0 30px;
+    cursor    : pointer;
+    @extend .transition;
+
+    &:hover {
+        background: $website-brand-color;
+        @extend .transition;
+        border-color: $website-brand-color;
+    }
+}

@@ -1,0 +1,96 @@
+.client-section {
+    .item{
+        margin: 0 auto;
+        max-width: 686px;
+        padding: 34px 34px 0 0;
+        background: url('assets/images/resource_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 200px;
+     
+           
+    .client_img{
+        position: absolute;
+        bottom: 0;
+        overflow: visible;
+
+    }
+    }
+    .owl-carousel {
+        .owl-nav {
+            display: flex;
+            justify-content: space-around;
+            gap: 145px;
+            transform: translateY(-100px);
+            button {
+                &.owl-prev,
+                &.owl-next {
+                    width: 100px;
+                    height: 100px;
+                    background: $primary-color;
+                    @extend .middle_align;
+                    color: $base-white-color;
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+
+    article {
+        blockquote {
+            font-weight: 500;
+            font-size: 24px;
+            color: $base-white-color;
+        }
+
+        hr {
+            width: 35px;
+            height: 2px;
+            margin: 0 auto;
+            background: $website-brand-color;
+            border: none;
+            display: inline-block;
+        }
+
+        .client-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: $base-white-color;
+            margin-top: 10px;
+        }
+
+        .client-address {
+            font-weight: 500;
+            font-size: 20px;
+            color: $base-font-gray-color;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 794.98px) {
+            blockquote {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+   
+
+    @media (max-width: 1299.98px) {
+        padding: 70px 0;
+
+        .sec-head {
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        padding: 50px 15px;
+
+        .sec-head {
+            margin-bottom: 50px;
+        }
+    }
+}
+

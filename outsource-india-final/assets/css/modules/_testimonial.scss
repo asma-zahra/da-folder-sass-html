@@ -1,0 +1,87 @@
+.testimonial_section {
+    background: $bg-testimonial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 100px 0;
+    .sechead {
+        margin-bottom: 50px;
+    }
+    h5 {
+        margin-bottom: 29px;
+        margin-top: 33px;
+        font-weight: 700;
+        font-size: 20px;
+        color: $base-black-color;
+    }
+    p {
+        font-size: 20px;
+        color: #727180;
+        margin-bottom: 25px;
+    }
+    .owl-carousel .owl-item img {
+        display: inline-flex;
+    }
+    hr {
+        background: $website-brand-color;
+        height: 2.74px;
+        width: 23.35px;
+        margin: 0 auto;
+    }
+    .client-name {
+        font-weight: 500;
+        font-size: 20px;
+        color: #4102c9;
+    }
+    .address {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+    .item {
+        margin-bottom: 20px;
+        opacity: 0.2;
+        transform: scale(0.5);
+        transition: all 0.3s ease-in-out;
+    }
+    .owl-item.active.center .item {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .owl-item.active.center .client-content {
+        display: block;
+    }
+    .owl-item .client-content {
+        display: none;
+    }
+    .owl-item:not(.owl-item.active.center)+.owl-item.active:not(.owl-item.active.center) .item {
+        text-align: right;
+        margin-right: -150px;
+    }
+    .owl-item.active.center+.owl-item.active .item {
+        text-align: left;
+        margin-left: -150px;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .testimonial_section {
+        p {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        .item {
+            margin-bottom: 0;
+            transform: scale(1);
+        }
+        .owl-item:not(.owl-item.active.center)+.owl-item.active:not(.owl-item.active.center) .item {
+            text-align: center;
+            margin-right: 0;
+        }
+        .owl-item.active.center+.owl-item.active .item {
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+}

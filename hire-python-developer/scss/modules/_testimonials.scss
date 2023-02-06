@@ -1,0 +1,80 @@
+.clientsec {
+    position: relative;
+    margin-top: 5.20vw;
+
+    .clientleft {
+        width: 34%;
+        
+        .clientimg {
+            width: 165px;
+            height: 184px;
+            margin: 12px;
+            cursor: pointer;
+            background: #DBDBDB;
+            position: relative;
+           
+            &::after {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 100%;
+                height: 100%;
+                background: #111111;
+                z-index: -1;
+              }
+              
+
+        }
+    }
+    .clientright {
+        width: 60%;
+        background: #191919;
+        padding: 5.49vw 2.94vw;
+        position: relative;
+        margin-left: 4.16vw;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 48px;
+            width: calc(100% - 40px);
+            height: calc(100% - 6px);
+            background: $website-brand-color;
+            @include box-shadow2 (3px, 3px, 10px, rgba(202, 252, 1, 0.5));
+            z-index: -1;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 42px;
+            right: 27px;
+            width: 69px;
+            height: 55px;
+            background: url(../images/qutes.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+    h5 {
+        font-size: 27px;
+        color: $base-font-color-2;
+        font-weight: 700;
+    }
+    .sub {
+        font-family: 'IBM Plex Mono', monospace;
+        color: $base-font-color;
+        font-size:20px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 28px;
+        color: $base-font-color-2;
+        line-height: 42px;
+
+    }
+    .clientimg.active::after {
+        background: $website-brand-color;
+        @include box-shadow2 (3px, 3px, 10px, rgba(202, 252, 1, 0.3));
+    }
+}

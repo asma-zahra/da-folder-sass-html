@@ -1,0 +1,156 @@
+.get_started_form {
+    background: $highlight-color;
+    padding: 100px 88px;
+    border-radius: 20px;
+    p {
+        text-align: center;
+    }
+}
+
+#vecrm-form form {
+    text-align: left;
+}
+
+form .marketing-field .lp-form-field label {
+    color: $base-font-color1 !important;
+    font-size: 16px !important;
+    padding-bottom: 0 !important;
+    opacity: 1 !important;
+    font-weight: 500 !important;
+    font-family: $base-font-family !important;
+}
+
+#vecrm-form form .marketing-field .lp-form-field input,
+#vecrm-form form .marketing-field .lp-form-field select,
+#vecrm-form form .marketing-field .lp-form-field textarea {
+    border: solid 1px $base-font-color2 !important;
+    font-size: 16px;
+    padding: 13px 34px;
+    background-color: #fff;
+    font-weight: 400;
+    font-family: $base-font-family !important;
+    border-radius: 4px;
+    color: #D7D7D7;
+    margin-bottom: 22px;
+}
+
+#vecrm-form form .marketing-field .lp-form-field select:invalid {
+    color: #a7a7a7 !important;
+}
+
+#vecrm-form form .marketing-field .lp-form-field select {
+    color: #111 !important;
+}
+
+form .marketing-field .lp-form-field input:focus,
+form .marketing-field .lp-form-field select:focus,
+form .marketing-field .lp-form-field textarea:focus {
+    box-shadow: 0 0 0 0.25rem #eeeefd !important;
+    outline: none;
+}
+
+form .marketing-field .lp-form-field input:focus-visible,
+form .marketing-field .lp-form-field select:focus-visible,
+form .marketing-field .lp-form-field textarea:focus-visible {
+    outline: none !important;
+}
+
+form .marketing-field .lp-form-field input,
+form .marketing-field .lp-form-field select,
+form .marketing-field .lp-form-field textarea {
+    margin-top: 0;
+}
+
+.lp-form-button {
+    background: #4102C9 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 100px !important;
+    font-weight: 700 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    font-size: 20px !important;
+    line-height: 1.5;
+    padding: 12px 40px !important;
+    height: 60px;
+    // box-shadow   : 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all .5s;
+    cursor: pointer;
+    font-family: $base-font-family !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.step_form .lp-form-button {
+    min-width: 350px !important;
+}
+
+.lp-form-button:focus {
+    outline: none;
+}
+
+.get_started_form {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 434px;
+        height: 392px;
+        top: 0;
+        right: 0;
+        background: rgba(1, 203, 173, 0.15);
+        border: 1px solid #0E1422;
+        filter: blur(200px);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .get_started_form {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #vecrm-form form .marketing-field .lp-form-field input,
+    #vecrm-form form .marketing-field .lp-form-field select,
+    #vecrm-form form .marketing-field .lp-form-field textarea {
+        padding: 13px 24px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #vecrm-form form .marketing-field .lp-form-field input,
+    #vecrm-form form .marketing-field .lp-form-field select,
+    #vecrm-form form .marketing-field .lp-form-field textarea {
+        font-size: 14px;
+        padding: 13px 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .lp-form-button {
+        padding: 20px 15px !important;
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .get_started_form {
+        padding: 7px;
+    }
+    form .marketing-field .lp-form-field label {
+        font-size: 13px !important;
+    }
+    .get_started_form {
+        padding: 20px;
+    }
+    #vecrm-form form .marketing-field .lp-form-field input,
+    #vecrm-form form .marketing-field .lp-form-field select,
+    #vecrm-form form .marketing-field .lp-form-field textarea {
+        font-size: 12px;
+        padding: 13px 5px;
+    }
+}

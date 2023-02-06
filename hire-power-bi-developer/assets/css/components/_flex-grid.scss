@@ -1,0 +1,86 @@
+.flexbox {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    margin-left : -1rem;
+    margin-right: -1rem;
+
+    @media (max-width: 767.98px) {
+        @include flex-wrap(wrap);
+    }
+}
+
+.flex-1,
+.flex-2,
+.flex-3,
+.flex-4,
+.flex-5,
+.flex-6,
+.flex-7,
+.flex-8,
+.flex-9,
+.flex-10,
+.flex-11,
+.flex-12 {
+    padding-left : 1rem;
+    padding-right: 1rem;
+
+    @media (max-width: 767.98px) {
+        flex : 0 0 auto;
+        width: 100%;
+    }
+}
+
+.flex-3 {
+    flex : 0 0 25%;
+    width: 25%;
+}
+
+.flex-4 {
+    flex : 0 0 33.33%;
+    width: 33.33%;
+}
+
+.flex-5 {
+    flex : 0 0 41.66666667%;
+    width: 41.66666667%;
+}
+
+.flex-6 {
+    flex : 0 0 50%;
+    width: 50%;
+}
+
+.flex-7 {
+    flex : 0 0 58.33333333%;
+    width: 58.33333333%;
+}
+
+.flex-12 {
+    flex : 0 0 100%;
+    width: 100%;
+}
+
+.flex1 {
+    @include flex(1);
+    padding-left : 1rem;
+    padding-right: 1rem;
+}
+
+.justify_content_center,
+.justify-content-center {
+    @include justify-content(center);
+}
+
+.justify-content-end {
+    @include justify-content(flex-end);
+}
+
+.align_items_center,
+.align-items-center {
+    @include align-items(center);
+}
+
+
+.flex_direction_column {
+    @include flex-direction(column);
+}

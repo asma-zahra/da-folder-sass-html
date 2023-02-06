@@ -1,0 +1,85 @@
+.testimonial_section {
+  padding: 120px 0;
+  background: $base-white-color;
+
+  h2 {
+    font-size: 40px;
+    color: $base-font-color1;
+    margin-bottom: 25px;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 24px;
+    color: $base-font-color2;
+    margin-bottom: 85px;
+  }
+  span {
+    background: #fef9c2;
+  }
+  h5 {
+    margin-bottom: 29px;
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 20px;
+    color: $base-black-color;
+  }
+  p {
+    font-size: 20px;
+    color: #727180;
+    margin-bottom: 25px;
+  }
+  img {
+    display: inline-flex;
+  }
+  hr {
+    background: $website-brand-color;
+    height: 2.74px;
+    width: 23.35px;
+    margin: 0 auto;
+  }
+  .client-name {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4102c9;
+  }
+  .address {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .item {
+    margin-bottom: 20px;
+    opacity: 0.2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    transition: all 0.3s ease-in-out;
+  }
+  .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  .clients_slider:before{
+    content: "";
+    position: absolute;
+    background: rgba(207, 244, 229, 0.3);
+    filter: blur(400px);
+    width:516px ;
+    height:516px ;
+    top: 4rem;
+    left: 180px;
+    z-index: -1;
+}
+.clients_slider:after{
+    content: "";
+    position: absolute;
+    background: rgba(244, 238, 207, 0.7);
+    filter: blur(300px);
+    width:805px ;
+    height:750px ;
+    top: 8rem;
+    left: 700px;
+    z-index: -1;
+}
+}

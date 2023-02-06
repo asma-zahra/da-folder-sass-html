@@ -1,0 +1,115 @@
+.collaboration {
+    padding: 100px 0;
+
+    .sechead {
+        text-align   : center;
+        margin-bottom: 100px
+    }
+
+    .coll-box {
+        @include flexbox;
+
+        .coll-content {
+            width  : 100%;
+            padding: 4rem 4rem 0 0;
+
+            h4 {
+                font-weight  : 700;
+                font-size    : 1.4545rem;
+                color        : $base-font-color;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size  : 1.0909rem;
+                color      : $base-font-color;
+            }
+        }
+
+        .coll-img {
+            width: 100%;
+        }
+    }
+
+    .owl-carousel {
+        .owl-nav {
+            position: absolute;
+            left    : 0;
+            top     : calc(100% - 40px);
+            margin  : 0;
+            padding : 0;
+        }
+    }
+}
+
+@media screen and (max-width:1439.98px) {
+    .collaboration {
+        .coll-box {
+            .coll-content {
+                padding: 2rem 3rem 0 0;
+
+                h4 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    .collaboration {
+        .coll-box {
+            //  @include flex-direction(column);
+            @include align-items(center);
+
+            .coll-content {
+                padding: 0 2rem 0 0;
+
+                h4 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                left     : 50%;
+                top      : calc(100% + 30px);
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .collaboration .sechead {
+        margin-bottom: 50px;
+    }
+    .collaboration {
+        .coll-box {
+            text-align: center;
+            @include flex-direction(column);
+            @include flex-flow(column-reverse);
+
+            .coll-img {
+                max-width    : 500px;
+                margin-bottom: 20px;
+            }
+
+            flex-flow: column-reverse;
+
+            .coll-content {
+                padding: 0 0 0 0;
+            }
+        }
+    }
+}

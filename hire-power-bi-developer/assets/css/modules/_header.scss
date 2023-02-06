@@ -1,0 +1,152 @@
+header,
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    @extend .transition;
+    padding: 0.675rem 0;
+    z-index: 9999;
+    border-bottom: solid 4px $base-black-color;
+    background: #FFF;
+
+    &.fixed-top-menu {
+        margin-top: 0;
+        top: 0;
+        padding: 10px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    }
+
+    .header--flex {
+        @include flexbox();
+        @include align-items(center);
+    }
+
+    .top-icons {
+        margin-right: 0;
+        margin-left: auto;
+        font-size: 0;
+
+
+
+        &-items {
+            position: relative;
+            cursor: pointer;
+            width: 42px;
+            height: 42px;
+            border-radius: 100px;
+            border: solid 1px $base-black-color;
+            margin-right: 15px;
+            @extend .middle_align;
+            @include box-shadow(-2px, 2px, 0, #000);
+
+            &.dropdown {
+                margin-right: 0;
+            }
+
+            em {
+                font-style: normal;
+            }
+
+
+
+            &.dropdown {
+                margin-right: 0;
+
+            }
+
+            &.icon,
+            .icon {
+                background: none;
+            }
+
+            .icon-envelope,
+            .icon-phone,
+            .icon-skype {
+                background: url(assets/images/skype-icon.svg) no-repeat;
+                width: 17px;
+                height: 16px;
+                display: inline-block;
+            }
+
+            .icon-phone {
+                background: url(assets/images/call-icon.svg) no-repeat;
+                width: 17px;
+                height: 16px;
+            }
+
+            .icon-envelope {
+                background: url(assets/images/mail-icon.svg) no-repeat;
+                width: 19px;
+                height: 14px;
+            }
+
+            /* i.icon-envelope {
+                background-position: -63px -4px;
+                width: 40px;
+                height: 40px;
+            }
+
+            i.icon-skype {
+                background-position: -115px -4px;
+                width: 40px;
+                height: 40px;
+            }
+
+            i.icon-phone {
+                background-position: -8px -4px;
+                width: 40px;
+                height: 40px;
+            } */
+
+
+        }
+
+        .dropdown-item {
+            font-size: 19px;
+        }
+    }
+
+    @media(max-width:991.98px) {
+        .top-icons {
+            margin-right: 10px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .logo {
+            max-width: 180px;
+        }
+
+        .top-icons {
+            margin-right: 0px;
+            padding: 8px 0;
+
+            &-items {
+                padding: 0 15px;
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .top-icons {
+
+            &-items {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    header,
+    .header {
+        padding-left: 0;
+    }
+
+    .flexbox {
+        margin: 0;
+    }
+}

@@ -1,0 +1,62 @@
+.banner {
+    background-image: $bg-banner;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 170px 0 0;
+    h1 {
+        font-weight: 700;
+        font-size: 52px;
+        color: $base-font-color1;
+        margin-bottom: 2rem;
+        .green {
+            color: $base-font-color2;
+            background-color: transparent;
+        }
+        span {
+            background-color: $highlight-color;
+        }
+    }
+    button {
+        @extend .btn-primary;
+        padding: 18px 100px;
+    }
+    .banner-img {
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width:1199.98px) {
+    .banner {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .banner {
+        h1 {
+            font-size: 5vw;
+        }
+        button {
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    .banner {
+        h1 {
+            font-size: 30px;
+            br {
+                display: none;
+            }
+        }
+        button {
+            font-size: 16px;
+        }
+    }
+}

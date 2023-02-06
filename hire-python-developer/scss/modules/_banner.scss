@@ -1,0 +1,111 @@
+.banner {
+  height: 100vh;
+  padding: 7.29vw 0 0;
+
+  .banner-inner {
+    z-index: 1;
+    }
+    h3 {
+      font-size: 1.25vw;
+      margin-bottom: 2.6vw;
+      letter-spacing: normal;
+    }
+    .theme-btn {
+      max-width: 414px;
+      height: 58px;
+      font-size: 20px;
+      background: #fff;
+      color: #1B1B1B;
+      font-weight: 700;
+    }
+
+    .banner-video {
+      background: #1B1D25;
+      border: solid 4px #fff;
+      max-width: 43.02vw;
+      max-height: 22.71vw;
+      width: 100%;
+      height: 100%;
+      margin: 2.92vw auto 0;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        left: 50px;
+        width: calc(100% - 40px);
+        height: calc(100% - 6px);
+        background: $website-brand-color;
+        z-index: -1;
+        @include box-shadow (5px, 5px, 20px, rgba(202, 252, 1, 0.5))
+      }
+      
+    }
+    .gridouter {
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      z-index: -3;
+    }
+    .grid {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      perspective: 408px;
+    }
+    .grid-ibf {
+      z-index: 2;
+    }
+    .grid-fade {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      background: radial-gradient(ellipse at 50% 50%, rgba(1, 0, 2, 0) 0%, #1B1B1B 80%);
+     
+    }
+    .grid-lines {
+      width: 100%;
+      height: 200%;
+      background-image: linear-gradient(to right, rgba(90, 90, 90, 0.85) 1px, transparent 0), linear-gradient(to bottom, rgba(90, 90, 90, 0.85) 1px, transparent 0);
+      background-size: 45px 30px;
+      background-repeat: repeat;
+      transform-origin: 100% 0 0;
+      animation: s-grid-animation 15s linear infinite;
+    }
+    @keyframes s-grid-animation {
+      0% {
+        -webkit-transform: rotateX(45deg) translateY(-50%);
+        -moz-transform: rotateX(45deg) translateY(-50%);
+        -ms-transform: rotateX(45deg) translateY(-50%);
+        -o-transform: rotateX(45deg) translateY(-50%);
+        transform: rotateX(45deg) translateY(-50%); }
+      100% {
+        -webkit-transform: rotateX(45deg) translateY(0);
+        -moz-transform: rotateX(45deg) translateY(0);
+        -ms-transform: rotateX(45deg) translateY(0);
+        -o-transform: rotateX(45deg) translateY(0);
+        transform: rotateX(45deg) translateY(0); } }
+    @-webkit-keyframes s-grid-animation {
+      0% {
+        -webkit-transform: rotateX(45deg) translateY(-50%);
+        -moz-transform: rotateX(45deg) translateY(-50%);
+        -ms-transform: rotateX(45deg) translateY(-50%);
+        -o-transform: rotateX(45deg) translateY(-50%);
+        transform: rotateX(45deg) translateY(-50%); }
+      100% {
+        -webkit-transform: rotateX(45deg) translateY(0);
+        -moz-transform: rotateX(45deg) translateY(0);
+        -ms-transform: rotateX(45deg) translateY(0);
+        -o-transform: rotateX(45deg) translateY(0);
+        transform: rotateX(45deg) translateY(0); } }
+}
+
+
+

@@ -1,0 +1,93 @@
+header.header {
+    position: fixed;
+    width: 100%;
+    background: $base-theme-color;
+    z-index: 1000;
+
+    &.fixed-top-menu {
+        margin-top: 0;
+        top: 0;
+        padding: 10px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        background: #000;
+    }
+
+}
+header.header .dflex  {
+    padding: 20px 10px;
+    @include d-flex;
+    justify-content: space-between;
+
+    .logo {
+        filter: brightness(100);
+    }
+    .top-icons {
+        @include d-flex;
+    }
+
+    .top-icons a {
+        color: $base-font-color;
+        padding: 0 10px;
+        &:hover {
+            color: $website-brand-color;
+        }
+       
+    }
+    .top-icons-items {
+        padding: 0 10px;
+        cursor: pointer;
+        
+        &:hover {
+            color: $website-brand-color;
+        }
+        .dropdown-menu {
+            position:absolute;
+            top: 100%;
+            right: 0;
+            left: auto;
+            border: 0;
+            padding: 16px;
+            border-radius: 10px;
+            width: 250px;
+            background: $base-font-color-2;
+            
+        }
+        .dropdown-item {
+            padding: 8px 12px;
+            font-size: 16px;
+            color: $base-theme-color;
+            font-weight: 700;
+            display: block;
+            &:hover {
+                background: #ecede9;
+                color: $base-theme-color;
+            }
+            img {
+                margin-right: 5px;
+            }
+        }
+        
+        
+    }
+    .top-icons em {
+        font-style: normal;
+    }
+    i {
+        width: 14px;
+        height: 14px;
+        display: inline-block; 
+        margin-right: 3px;
+    }
+    .icon-skype {
+        background: url(../images/skype.svg) no-repeat;
+    }
+    .icon-envelope {
+        background: url(../images/email.svg) no-repeat;
+    }
+    .icon-phone {
+        background: url(../images/call-icon.svg) no-repeat;
+    }
+    
+}
+
+

@@ -1,0 +1,521 @@
+.icons { 
+    width              : 40px;
+    height             : 40px;
+    background-position: 0 0;
+    display            : inline-block;
+
+    &.left-arrow-icon {
+        background: url('assets/images/left-arrow-icon.png') no-repeat;  
+        transform: rotate(180deg);
+        background-size: contain;
+    }
+    &.right-arrow-icon {
+        background: url('assets/images/left-arrow-icon.png') no-repeat; 
+        transform: rotate(180deg); 
+        background-size: contain;
+    }
+    &.right-arrow {
+        background: url('assets/images/right-arrow.png') no-repeat; 
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+    }
+    &.atom-ico{
+        background: url('assets/images/atom.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.nuclide-ico{
+        background: url('assets/images/nuclide.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.vs-coder-ico{
+        background: url('assets/images/visual-studio-coder.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.expo-ico{
+        background: url('assets/images/expo.svg') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 38px;
+    }
+    &.flow-ico{
+        background: url('assets/images/flow.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.nativeBase-ico{
+        background: url('assets/images/nativebase-logo-dark.png') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.Xamarin-ico{
+        background: url('assets/images/xamarin.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+  
+    &.angular-ico{
+        background: url('assets/images/nativebase-logo-dark.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+  
+    &.Ionic-ico{
+        background: url('assets/images/ionic.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+  
+    &.NativeScript-ico{
+        background: url('assets/images/nativescript.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+  
+    &.Swift-ico{
+        background: url('assets/images/swift.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.Eclipse-ico{
+        background: url('assets/images/eclipse.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.BuzzSumo-ico{
+        background: url('assets/images/buzzsumo-seeklogo.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+    &.Semrush-ico{
+        background: url('assets/images/Semrush_logo.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+    &.Localytics-ico{
+        background: url('assets/images/Localytics_Logo.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+    &.mixpanel-ico{
+        background: url('assets/images/mixpanel.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+    &.Google-AdMob-ico{
+        background: url('assets/images/Google_AdMob_logo.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+    &.Flutter-ico{
+        background: url('assets/images/flutter-logo.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.React-Native-ico{
+        background: url('assets/images/react-native.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.Appcelerator-ico{
+        background: url('assets/images/appcelerator.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+
+    &.Unity-ico{
+        background: url('assets/images/unity.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+
+    &.Sencha-ico{
+        background: url('assets/images/sencha.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.Codemagic-ico{
+        background: url('assets/images/Codemagic-ico.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+
+    &.qt-ico{
+        background: url('assets/images/qt.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+
+    &.Garmin-ico{
+        background: url('assets/images/garmin.svg') no-repeat;
+        background-size: contain; 
+        width: 80px;
+        height: 38px;
+    }
+   
+    &.FitBit-ico{
+        background: url('assets/images/fitbit.svg') no-repeat;
+        background-size: contain; 
+        width: 80px;
+        height: 38px;
+    }
+    &.Ramco-ico{
+        background: url('assets/images/remco.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    &.Resco-ico{
+        background: url('assets/images/resco.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    &.Panache-ico{
+        background: url('assets/images/panache-werbeagentur-logo.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+    &.Android-Studio-ico{
+        background: url('assets/images/Android_Studio_Icon.png') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+
+    &.Appetize-ico {
+        background: url('assets/images/Appetize.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+    &.adobe-plugin {
+        background: url('assets/images/adobe-plugin.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    &.Nmap-ico {
+        background: url('assets/images/Nmap-ico.png') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.Angry-IP-Scanner-ico {
+        background: url('assets/images/angry-ip-scanner.png') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.Netcat-ico {
+        background: url('assets/images/Netcat.png') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.PortScan-ico {
+        background: url('assets/images/PortScan.png') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    
+    &.EAM-ico {
+        background: url('assets/images/eam.png') no-repeat;
+        background-size: contain; 
+        width: 80px;
+        height: 50px;
+    }
+    &.Supernova-ico{
+        background: url('assets/images/supernova.png') no-repeat;
+        background-size: contain; 
+        width: 150px;
+        height: 50px;
+    }
+    
+    &.Asset-Panda-ico{
+        background: url('assets/images/panda.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+  
+
+    &.upkeep-ico{
+        background: url('assets/images/upkeep.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    
+    &.GP-Mate-ico{
+        background: url('assets/images/gpmate.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    &.Ava-ico{
+        background: url('assets/images/ava.png') no-repeat;
+        background-size: contain; 
+        width: 80px;
+        height: 50px;
+    }
+    &.Garmin-ico{
+        background: url('assets/images/garmin.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    &.Owlet-ico{
+        background: url('assets/images/owlet.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    &.FitBit-ico{
+        background: url('assets/images/fitbit.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    &.Withings-ico{
+        background: url('assets/images/witings.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+    &.Motiv-ico{
+        background: url('assets/images/motive.png') no-repeat;
+        background-size: contain; 
+        width: 100px;
+        height: 50px;
+    }
+
+   
+
+    
+    
+  
+    
+   
+
+    
+    
+    
+
+
+
+  
+  
+    
+
+
+    &.apple-ico {
+        background: url('assets/images/apple.svg') no-repeat; 
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+    }
+
+    &.angular-ico {
+        background: url('assets/images/angular.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.android-ico {
+        background: url('assets/images/android.svg') no-repeat;
+        background-size: contain; 
+        width: 50px;
+        height: 50px;
+    }
+    &.microsoft-ico {
+        background: url('assets/images/microsoft.svg') no-repeat; 
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+    }
+    &.php-ico {
+        background: url('assets/images/php.png') no-repeat; 
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+
+
+.resources-icons { 
+    width              : 39px;
+    height             : 39px;
+    background-position: 0 0;
+    display            : inline-block;
+
+
+    &.left-arrow-icon {
+        background: url('assets/images/resource-arrow.png') no-repeat;
+        transform: rotate(180deg); 
+        background-size: contain;
+        
+    }
+    &.right-arrow-icon {
+        background: url('assets/images/resource-arrow.png') no-repeat;  
+        transform: rotate(180deg);
+        background-size: contain;
+    }
+    &.php-ico {
+        background: url('assets/images/php.png') no-repeat; 
+        background-size: contain;
+        width: 38px;
+        height: 38px;
+    }
+      &.microsoft-net-ico {
+        background: url('assets/images/microsoft-net.svg') no-repeat; 
+        background-size: contain;
+        width: 38px;
+        height: 38px;
+    }
+      &.java-ico {
+        background: url('assets/images/java.svg') no-repeat; 
+        background-size: contain;
+        width: 38px;
+        height: 38px;
+    }
+     &.angular-ico {
+        background: url('assets/images/angular.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.python-ico {
+        background: url('assets/images/python.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.nodejs-ico {
+        background: url('assets/images/nodejs-icon.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.react-ico{
+        background: url('assets/images/react.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.reactnative-ico{
+        background: url('assets/images/react-native.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.laravel-ico{
+        background: url('assets/images/laravel.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.magento-ico{
+        background: url('assets/images/magento.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.wordpress-ico{
+        background: url('assets/images/wordpress-blue.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.android-ico {
+        background: url('assets/images/android.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.ios-ico{
+        background: url('assets/images/ios.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.firebase-ico{
+        background: url('assets/images/firebase-1.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.mongodb-ico{
+        background: url('assets/images/mongodb.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.mysql-ico{
+        background: url('assets/images/mysql.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.swift-ico{
+        background: url('assets/images/swift.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.objective-c-ico{
+        background: url('assets/images/objective-c.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.git-ico{
+        background: url('assets/images/git.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    &.scrum-ico{
+        background: url('assets/images/scrum.svg') no-repeat;
+        background-size: contain; 
+        width: 38px;
+        height: 38px;
+    }
+    
+  
+  
+}
+
+
+
